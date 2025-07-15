@@ -1,32 +1,66 @@
-# Advanced HTML
-## 🔍 Core HTML Elements 
-| **Element**       | **Purpose**                                                               | **Common Attributes**                                  | **Example**                                                              |
-| ----------------- | ------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------ |
-| `<!DOCTYPE html>` | Declares the document is HTML5. Must be at the top of the page.           | *None*                                                 | `<!DOCTYPE html>`                                                        |
-| `<html>`          | Root of the HTML document. Wraps the whole page content.                  | `lang`, `dir`                                          | `<html lang="en" dir="ltr">`                                             |
-| `lang` / `dir`    | Specifies language (`lang`) and reading direction (`dir`) of content.     | `lang="en"`, `dir="rtl"` (for right-to-left languages) | `<html lang="en" dir="ltr">`                                             |
-| `<head>`          | Contains meta-information, links to CSS, JS, etc. Not rendered on screen. | *None*                                                 | `<head> ... </head>`                                                     |
-| `<title>`         | Sets the browser tab title. Only one allowed per document.                | *None*                                                 | `<title>Homepage</title>`                                                |
-| `<meta>`          | Provides metadata (e.g., charset, viewport, description, author).         | `charset`, `name`, `content`, `viewport`               | `<meta name="viewport" content="width=device-width, initial-scale=1.0">` |
-| `<link>`          | Links external files like CSS, favicon, etc.                              | `rel`, `href`, `type`                                  | `<link rel="stylesheet" href="styles.css">`                              |
-| `<body>`          | Contains all visible content (headings, paragraphs, images, etc).         | *None*                                                 | `<body> ... </body>`                                                     |
+# 🌐 Advanced HTML
+## ⚙️ Meta & Structure Elements
+| **Element**       | **Purpose**                               | **Example**                                |
+| ----------------- | ----------------------------------------- | ------------------------------------------ |
+| `<!DOCTYPE html>` | Declares document as HTML5                | `<!DOCTYPE html>`                          |
+| `<html>`          | Root of the HTML document                 | `<html lang="en" dir="ltr">`               |
+| `<head>`          | Contains meta-info (not visible)          | `<head><title>My Page</title></head>`      |
+| `<title>`         | Browser tab title                         | `<title>Homepage</title>`                  |
+| `<meta>`          | Metadata (charset, viewport, description) | `<meta charset="UTF-8">`                   |
+| `<link>`          | Links external resources like CSS         | `<link rel="stylesheet" href="style.css">` |
+| `<script>`        | Links or embeds JavaScript                | `<script src="main.js"></script>`          |
+| `<style>`         | Internal CSS                              | `<style>body { color: red; }</style>`      |
 
-## 🧱 Additional Elements and Examples
-| **Element**            | **Purpose**                                         | **Example**                                       |
-| ---------------------- | --------------------------------------------------- | ------------------------------------------------- |
-| `<h1>` to `<h6>`       | Headings from largest (`<h1>`) to smallest (`<h6>`) | `<h2>Section Title</h2>`                          |
-| `<p>`                  | Paragraph                                           | `<p>This is a paragraph.</p>`                     |
-| `<a>`                  | Anchor / hyperlink to another page or location      | `<a href="https://example.com">Visit Site</a>`    |
-| `<img>`                | Displays an image                                   | `<img src="logo.png" alt="Company Logo">`         |
-| `<ul>`, `<ol>`, `<li>` | Unordered / ordered lists and list items            | `<ul><li>Item</li></ul>`                          |
-| `<div>`                | Block-level generic container                       | `<div class="wrapper">...</div>`                  |
-| `<span>`               | Inline generic container                            | `<span class="highlight">Text</span>`             |
-| `<section>`            | Thematic grouping of content                        | `<section><h2>About</h2><p>...</p></section>`     |
-| `<article>`            | Self-contained block of content                     | `<article><h3>Blog Post</h3><p>...</p></article>` |
-| `<header>`             | Introductory content for a page or section          | `<header><h1>My Site</h1></header>`               |
-| `<footer>`             | Footer section with metadata, links, etc.           | `<footer>© 2025</footer>`                         |
-| `<nav>`                | Navigation section with links                       | `<nav><a href="#home">Home</a></nav>`             |
-| `<br>`                 | Line break (no closing tag)                         | `Line 1<br>Line 2`                                |
-| `<hr>`                 | Thematic break (horizontal rule)                    | `<hr>`                                            |
-| `<main>`               | Main content of the document (only one per page)    | `<main><section>...</section></main>`             |
-| `<aside>`              | Side content (ads, sidebars, etc.)                  | `<aside><p>Related links</p></aside>`             |
+---
+
+## 🧱 Semantic Elements
+| **Element** | **Purpose**                         | **Example**                                       |
+| ----------- | ----------------------------------- | ------------------------------------------------- |
+| `<section>` | Thematic grouping of content        | `<section><h2>About</h2><p>Info</p></section>`    |
+| `<article>` | Self-contained content block        | `<article><h3>Blog Post</h3><p>...</p></article>` |
+| `<header>`  | Intro content for a page or section | `<header><h1>Welcome</h1></header>`               |
+| `<footer>`  | Footer with metadata or links       | `<footer>© 2025 MySite</footer>`                  |
+| `<nav>`     | Navigation bar                      | `<nav><a href="#home">Home</a></nav>`             |
+| `<main>`    | Main content of the page            | `<main><section>...</section></main>`             |
+| `<aside>`   | Sidebar or additional content       | `<aside><p>Tips</p></aside>`                      |
+
+---
+## 📦 Grouping Elements
+| **Element** | **Purpose**                   | **Example**                           |
+| ----------- | ----------------------------- | ------------------------------------- |
+| `<div>`     | Generic block-level container | `<div class="wrapper">...</div>`      |
+| `<span>`    | Generic inline container      | `<span class="highlight">Text</span>` |
+
+---
+## 📝 Text Elements
+| **Element**      | **Purpose**                                         | **Example**                    |
+| ---------------- | --------------------------------------------------- | ------------------------------ |
+| `<h1>` to `<h6>` | Headings from largest (`<h1>`) to smallest (`<h6>`) | `<h2>Section Title</h2>`       |
+| `<p>`            | Paragraph of text                                   | `<p>This is a paragraph.</p>`  |
+| `<br>`           | Line break (no closing tag)                         | `Line 1<br>Line 2`             |
+| `<hr>`           | Horizontal rule / thematic break                    | `<hr>`                         |
+| `<strong>`       | Emphasized strong text (usually bold)               | `<strong>Important</strong>`   |
+| `<em>`           | Emphasized text (usually italic)                    | `<em>Highlighted</em>`         |
+| `<small>`        | Smaller text                                        | `<small>Footnote text</small>` |
+
+---
+## 🔗 Link & Media Elements
+| **Element** | **Purpose**                        | **Example**                                        |
+| ----------- | ---------------------------------- | -------------------------------------------------- |
+| `<a>`       | Anchor / hyperlink                 | `<a href="https://example.com">Visit Site</a>`     |
+| `<img>`     | Displays an image                  | `<img src="logo.png" alt="Company Logo">`          |
+| `<video>`   | Embeds a video                     | `<video controls><source src="video.mp4"></video>` |
+| `<audio>`   | Embeds audio                       | `<audio controls><source src="audio.mp3"></audio>` |
+| `<iframe>`  | Embeds another web page or content | `<iframe src="page.html"></iframe>`                |
+
+---
+## 📋 List Elements
+| **Element**     | **Purpose**                      | **Example**                                      |
+| --------------- | -------------------------------- | ------------------------------------------------ |
+| `<ul>`          | Unordered (bulleted) list        | `<ul><li>Item A</li><li>Item B</li></ul>`        |
+| `<ol>`          | Ordered (numbered) list          | `<ol><li>Step 1</li><li>Step 2</li></ol>`        |
+| `<li>`          | List item (used in `ul` or `ol`) | `<li>Item</li>`                                  |
+| `<dl>`          | Description list                 | `<dl><dt>HTML</dt><dd>Markup language</dd></dl>` |
+| `<dt>` / `<dd>` | Term / Description               | `<dt>Term</dt><dd>Description</dd>`              |
+
+
