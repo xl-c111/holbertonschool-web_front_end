@@ -12,7 +12,7 @@ body {
 }
 
 /* Target only anchor elements containing a hyperlink */
-a[href] {
+a:link {
     --text-color: #161616;
     text-decoration: none;
 }
