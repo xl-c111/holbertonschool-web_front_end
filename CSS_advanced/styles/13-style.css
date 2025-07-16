@@ -11,20 +11,24 @@ body {
     line-height: var(--line-height-base);
 }
 
+/* Target only anchor elements containing a hyperlink */
 a[href] {
     --text-color: #161616;
     text-decoration: none;
 }
 
-a[href]:visited {
+/* Target visited state: italicize the text */
+a:visited {
     font-style: italic;
 }
 
-a[href]:hover {
+/* Target hover state: underline the link */
+a:hover {
     text-decoration: underline;
 }
 
-a[href]:active {
+/* Target active state: set background color */
+a:active {
     background-color: var(--color-light-grey);
 }
 
