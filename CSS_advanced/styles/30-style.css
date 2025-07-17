@@ -191,7 +191,7 @@ a:active {
     overflow: hidden;
 }
 
-.card-work .card-image {
+.card-work .card-image img {
     height: 30rem;
     width: 100%;
     object-fit: cover;
@@ -206,7 +206,7 @@ a:active {
     z-index: 1;
 }
 
-.card-worl:hover .card-inner {
+.card-work:hover .card-inner {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
