@@ -134,17 +134,17 @@ a:active {
     --color-primary: #D73953;
 }
 
-.card-title .card-category {
+.card-servicces .card-title {
     margin: 0;
 }
 
-card-title a {
+.card-title a {
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
 }
 
-card-services a:hover {
+.card-services a:hover {
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
