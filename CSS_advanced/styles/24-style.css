@@ -134,11 +134,11 @@ a:active {
     --color-primary: #D73953;
 }
 
-.card-servicces .card-title {
+.card-services .card-title {
     margin: 0;
 }
 
-.card-title a {
+.card-services a {
     display: block;
     padding: 2rem;
     background-color: var(--color-light-grey);
