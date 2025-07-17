@@ -447,12 +447,15 @@ a:active {
     margin: var(--nav-item-margin);
 }
 
-.nav .nav-link:hover {
+.nav .nav-link {
     display: block;
     padding-top: calc(var(--font-size-medium) / 2);
     padding-bottom: calc(var(--font-size-medium) / 2);
     padding-left: var(--font-size-medium);
     padding-right: var(--font-size-medium);
+}
+
+.nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
@@ -535,7 +538,7 @@ a:active {
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: calc(1rem * 0.04);
+    --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 calc(1rem * 3) 0;
     --nav-item-link-hover: var(--color-primary);
