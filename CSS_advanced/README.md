@@ -29,6 +29,7 @@ section { }               /* Tag selector */
 .my-block > .my-title { } /* Direct child */
 .my-block + .my-title { } /* Next sibling */
 .my-block ~ .my-title { } /* Any sibling */
+
 ```
 
 ---
@@ -136,6 +137,7 @@ p::first-letter {
 - **`padding`**: Space between content and border  
 - **`border`**: Surrounds padding/content  
 - **`margin`**: Space outside the element's border
+
 ```
 .box {
   box-sizing: border-box;
@@ -146,12 +148,14 @@ p::first-letter {
 }
 ```
 ---
+
 ## 📌 Positioning
 - **`static`**: Default, follows document flow  
 - **`relative`**: Offset from normal position  
 - **`absolute`**: Positioned relative to nearest ancestor  
 - **`fixed`**: Fixed to viewport  
 - **`sticky`**: Sticks to edge while scrolling
+
 ---
 
 ## 🧩 CSS Custom Properties (Variables)

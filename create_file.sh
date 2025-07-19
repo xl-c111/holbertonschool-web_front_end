@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Hardcoded base path (修改为你项目实际路径)
+# Hardcoded base path 
 BASE_DIR="/home/Work/holbertonschool-web_front_end"
 STYLE_DIR="$BASE_DIR/CSS_advanced/styles"
 HTML_FILE="$BASE_DIR/html_advanced/index.html"
