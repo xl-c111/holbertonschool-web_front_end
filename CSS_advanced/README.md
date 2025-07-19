@@ -7,6 +7,26 @@ element-selector {
   another-style-property: value;
 }
 ```
+## 🔗 How to Link CSS in HTML
+### ✅ Syntax
+
+```html
+<link rel="stylesheet" href="styles.css">
+```
+### 🧠 Explanation
+
+- `rel="stylesheet"` tells the browser it’s a CSS file.  
+- `href="styles.css"` specifies the path to your CSS file.  
+-  Make sure the file path is **relative to the HTML file**.
+
+### 📁 Example File Structure
+```
+project/
+├── index.html
+└── styles.css
+
+```
+---
 
 ## 📙 CSS Selectors Summary
 | Type           | Example    | Used For                              |
@@ -170,6 +190,32 @@ They are declared with `--` and accessed with `var()`.
 | `--font-family-base` | Body font family           | `'Open Sans', sans-serif` |
 | `--font-weight-bold` | Bold text weight           | `700`                     |
 | `--section-padding`  | Consistent section spacing | `2rem`                    |
+
+---
+
+## 🎯 CSS Specificity 
+
+The higher the specificity, the more precedence a rule has.
+
+### 📐 Examples (Ranked from Lowest to Highest)
+
+| Selector              | Specificity   | Explanation                                      |
+|-----------------------|---------------|--------------------------------------------------|
+| `div`                 | 0,0,0,1       | One type selector                               |
+| `.box`                | 0,0,1,0       | One class selector                              |
+| `#header`             | 0,1,0,0       | One ID selector                                 |
+| `div.box`             | 0,0,1,1       | One type + one class                            |
+| `#header .box`        | 0,1,1,0       | One ID + one class                              |
+| `style="color:red"`   | 1,0,0,0       | Inline style overrides everything else          |
+
+---
+
+### 🧠 Rules to Remember
+
+- **More specific wins** — the higher the specificity value, the stronger the rule.
+- **Inline styles beat everything**, unless `!important` is used.
+- **`!important`** can override specificity, but should be avoided if possible.
+- **Universal selector (`*`), combinators (`>`, `+`, `~`), and `:where()`** have **no specificity**.
 
 ---
 
