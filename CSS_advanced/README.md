@@ -19,13 +19,6 @@ element-selector {
 - `href="styles.css"` specifies the path to your CSS file.  
 -  Make sure the file path is **relative to the HTML file**.
 
-### 📁 Example File Structure
-```
-project/
-├── index.html
-└── styles.css
-
-```
 ---
 
 ## 📙 CSS Selectors Summary
